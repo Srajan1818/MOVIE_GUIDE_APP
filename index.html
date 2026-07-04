@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE GUIDE APP</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        <!---Nav Bar Styling-->
+        body{
+            background-color: #f5f5f5;
+        }
+        nav{
+            background-color: #232f3e;
+            color: white;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width:1200px;
+            margin: 0 auto;
+            padding: 18px;
+        }
+     .search-container input,button{
+        padding: 5px 10px;
+        border: none;
+        font-size: 16px;
+     }
+     .search-container input{
+        border-radius: 3px 0 0 3px;
+     }
+     .search-container button{
+        border-radius: 0 3px 3px 0;
+        background-color: #f5c518;
+        cursor: pointer;
+        transition: all 0.2s;
+     }
+     .search-container button:hover{
+        background-color: #ffdd45;
+     }
+
+    main{
+        max-width: 1200px;
+        margin-block: 38px;
+    }
+    main section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+    }
+    footer{
+        text-align: center;
+        background-color: #232f3e;
+        color: white;
+        padding-block: 20px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    footer p{
+        margin-right: 330px;
+        margin-left: 250px;
+    }
+    .movie-container{
+        margin-left: 250px;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px #ccc;
+        width: 80%;
+        border-radius: 5px;
+        align-items: center;
+    }
+    .movie-poster img{
+        height: 450px;
+        margin-right: 30px;
+        border-radius: 5px 0 0 5px;
+    }
+    .movie-info{
+        padding-inline: 15px;
+    }
+    .movie-info h2{
+        text-align: center;
+        font-size: 32px;
+        margin: 20px 0 12px 0;
+    }
+    .movie-info h2+p{
+        text-align: center;
+    }
+    .movie-info .movie-genre p{
+        background-color: #232f3e;
+        color: white;
+        padding: 5px 14px;
+        margin-inline: 5px;
+        border: 2px solid black;
+        border-radius: 6px;
+        font-weight: 700;
+    }
+    .movie-info .movie-genre{
+        display: flex;
+        justify-content: center;
+        margin-block: 5px;
+        overflow-x: auto;
+    }
+    .movie-info p{
+        font-size: 18px;
+        margin-block: 16px;
+        line-height: 24px;
+    }
+    .movie-container.noBackGround{
+       background-color: #fff;
+       box-shadow: none;
+    }
+
+    @media screen and (max-width:950px){
+        .movie-container{
+            flex-direction: column;
+        }
+        .movie-poster img{
+    width: 100%;
+    height: fit-content;
+    margin-right: 0;
+        }
+        .movie-info{
+            padding:30px;
+        }
+    }
+    @media screen and (max-width:950px){
+        .nav-bar{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-container{
+            margin-top: 12px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo">
+             <h1>Movie Guide App</h1>
+            </div>
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Search-Movie" class="input-Box">
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Movie Section-->
+    <main>
+        <section>
+            <div class="movie-container noBackGround">
+                <h2>Search Movie Details Here</h2>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2026 Movie Guide App</p>
+    </footer>
+</body>
+<script src="sccript.js"></script>
+</html>
