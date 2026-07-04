@@ -41,17 +41,6 @@ This project was created to strengthen the following concepts:
 
 
 
-
-## 📁 Project Structure
-movie-guide/
-├── index.html       # Main HTML file
-├── style.css        # Stylesheet
-├── script.js        # App logic and API integration
-├── preview.png      # App screenshot (optional)
-└── README.md        # Project documentation  
-
----
-
 ## 📌 How To Use
 
 1. Type any **movie name** in the search bar.
